@@ -1,0 +1,15 @@
+<a [routerLink]="['/']">Home</a>
+<p style="color:purple">Add a new author:</p>
+<form (submit)='addauthor()'>
+    <p>Name:</p>
+    <p *ngFor='let x of err'>{{x}}</p>
+    <br>
+    <input type="text" name="name" [(ngModel)]='aut.name'>
+    <br>
+    <br>
+    <a [routerLink]="['/']">
+        <div class='btn'>Cancel</div>
+    </a>
+    <button class='btn'>submit</button>
+</form>
+{{aut|json}}
