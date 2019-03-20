@@ -10,6 +10,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 export class AddComponent implements OnInit {
   aut={name:null};
   err=[];
+  errors: any = {}
 
   constructor(
     private _addauthor: HttpService,
