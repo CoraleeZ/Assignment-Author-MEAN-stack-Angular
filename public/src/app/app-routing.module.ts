@@ -9,7 +9,7 @@ import { EditComponent } from './edit/edit.component';
 const routes: Routes = [
   { path: 'new', component: AddComponent },
   { path: 'edit/:id', component: EditComponent },
-  { path: '**', component: DisplayComponent },
+  { path: '', component: DisplayComponent },
 
 
 ];
